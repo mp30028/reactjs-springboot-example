@@ -1,8 +1,12 @@
 ##############################
 ## disabled-files
 ##############################
-*_DISABLE
-*_DISABLED
+# *_DISABLE
+# *_DISABLED
+# *_DISABLED_*
+# *_DISABLE_*
+*.*_DISABLE*
+
 
 ##############################
 ## mysql-data-files
@@ -70,6 +74,16 @@ gradle-app.setting
 !gradle-wrapper.jar
 
 ##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+##############################
 ## Eclipse
 ##############################
 .settings/
@@ -88,6 +102,23 @@ local.properties
 .factorypath
 
 ##############################
+## NetBeans
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Visual Studio Code
+##############################
+.vscode/
+.code-workspace
+
+##############################
 ## OS X
 ##############################
 .DS_Store
@@ -96,6 +127,7 @@ local.properties
 ##############################
 ## ReactJs
 ##############################
+.DS_STORE
 node_modules
 scripts/flow/*/.flowconfig
 .flowconfig
@@ -120,7 +152,7 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
-*.project
+
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
 packages/react-devtools-extensions/chrome/*.crx
@@ -133,50 +165,3 @@ packages/react-devtools-extensions/.tempUserDataDir
 packages/react-devtools-inline/dist
 packages/react-devtools-shell/dist
 packages/react-devtools-timeline/dist
-yarn.lock
-package-lock.json
-
-
-
-
-
-
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-out/
-.idea/
-.idea_modules/
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-nbactions.xml
-nb-configuration.xml
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-.code-workspace
